@@ -104,6 +104,7 @@ public class ViewBookedHotel extends JFrame implements ActionListener{
         
         JLabel labeltotprice = new JLabel();
         labeltotprice.setBounds(220,410,150,25);
+        labeltotprice.setFont(new Font("",Font.BOLD,16));
         add(labeltotprice);
         
         back = new JButton("Back");

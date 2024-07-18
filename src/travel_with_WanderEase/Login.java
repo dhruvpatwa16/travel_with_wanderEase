@@ -18,7 +18,7 @@ public class Login extends JFrame implements ActionListener{
     getContentPane().setBackground(Color.WHITE); //TAKES WHOLE PANEL
     
     JPanel p1 = new JPanel();
-    p1.setBackground(new Color(131,193,233));
+    p1.setBackground(new Color(68,161,189));
     p1.setBounds(0, 0, 400, 400);  // won't work if set Layout isn't null
     p1.setLayout(null);
     add(p1);
@@ -52,7 +52,7 @@ public class Login extends JFrame implements ActionListener{
     
     login = new JButton("Login");
     login.setBounds(60,200,130,30);
-    login.setBackground(new Color(133,193,233));
+    login.setBackground(new Color(68,161,189));
     login.setForeground(Color.WHITE);
     login.setBorder(new LineBorder(new Color(133,193,233)));
     login.addActionListener(this);
@@ -60,7 +60,7 @@ public class Login extends JFrame implements ActionListener{
     
     signup = new JButton("Signup");
     signup.setBounds(230,200,130,30);
-    signup.setBackground(new Color(133,193,233));
+    signup.setBackground(new Color(68,161,189));
     signup.setForeground(Color.WHITE);
     signup.setBorder(new LineBorder(new Color(133,193,233)));
     signup.addActionListener(this);
@@ -68,7 +68,7 @@ public class Login extends JFrame implements ActionListener{
     
     forgotpassword = new JButton("Forgot Password?");
     forgotpassword.setBounds(140,250,130,30);
-    forgotpassword.setBackground(new Color(133,193,233));
+    forgotpassword.setBackground(new Color(68,161,189));
     forgotpassword.setForeground(Color.WHITE);
     forgotpassword.setBorder(new LineBorder(new Color(133,193,233)));
     forgotpassword.addActionListener(this);

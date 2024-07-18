@@ -38,19 +38,19 @@ public class Loading extends JFrame implements Runnable{
         
         JLabel text = new JLabel("Travel with WanderEase App");
         text.setBounds(70,20,600,40);
-        text.setForeground(Color.blue);
+        text.setForeground(new Color(24,91,117));
         text.setFont(new Font("Raleway", Font.BOLD,35));
         add(text);
         
         JLabel loading = new JLabel("Loading, Please wait...");
         loading.setBounds(220,130,200,30);
-        loading.setForeground(Color.red);
+        loading.setForeground(new Color(50,111,124));
         loading.setFont(new Font("Raleway", Font.BOLD,16));
         add(loading);
         
         JLabel lblusername = new JLabel("Welcome "+ username);
         lblusername.setBounds(20,310,500,40);
-        lblusername.setForeground(Color.red);
+        lblusername.setForeground(new Color(24,91,117));
         lblusername.setFont(new Font("Raleway", Font.BOLD,35));
         add(lblusername);
         

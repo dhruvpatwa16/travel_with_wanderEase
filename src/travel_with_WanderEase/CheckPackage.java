@@ -5,11 +5,11 @@ public class CheckPackage extends JFrame{
     CheckPackage(){
         setBounds(450,200,900,560);
         
-        String [] package1 = {"GOLD PACKAGE","6N/7D","Exotic Bali Summer Tour","-Balinese Massage","-Kintamani and Handara Gate Tour","-Bali Swing at Alas Harums","-Indian Meals (Lunch and Dinner)","-Cretya Day Club Entrance","-English Speaking Guide","-Nusa Penida West Island Tour","Summer Special Price @WanderEase : INR 2,99,999*","package1-1.png"};
-        String [] package2 = {"SILVER PACKAGE","5N/6D","Spectacular Phuket Getaway","-Round Trip Flights","-4 Star Hotels","-Airport Transfers","-5 Activities","-Selected Meals","-Island Tour","-Ferry Transfer","Summer Special Price @WanderEase : INR 1,99,999*","package2-1.jpg"};
-        String[] package3 = {
-                "BRONZE PACKAGE",
-                "4N/5D",
+        String [] package3 = {"BRONZE PACKAGE","4N/5D","Exotic Bali Summer Tour","-Balinese Massage","-Kintamani and Handara Gate Tour","-Bali Swing at Alas Harums","-Indian Meals (Lunch and Dinner)","-Cretya Day Club Entrance","-English Speaking Guide","-Nusa Penida West Island Tour","Summer Special Price @WanderEase : INR 1,30,999*","Bali","package3.png"};
+        String [] package2 = {"SILVER PACKAGE","5N/6D","Spectacular Phuket Getaway","-Round Trip Flights","-4 Star Hotels","-Airport Transfers","-5 Activities","-Selected Meals","-Island Tour","-Ferry Transfer","Summer Special Price @WanderEase : INR 1,99,999*","Phuket","package2-1.jpg"};
+        String[] package1 = {
+                "GOLD PACKAGE",
+                "6N/7D",
                 "Exotic London Winter Tour",
                 "- Thames River Cruise",
                 "- Buckingham Palace Tour",
@@ -18,8 +18,9 @@ public class CheckPackage extends JFrame{
                 "- Entrance to Madame Tussauds",
                 "- English Speaking Guide",
                 "- Day Trip to Stonehenge and Bath",
-                "Winter Special Price @WanderEase : INR 1,30,999*",
-                "package3.jpg"
+                "Winter Special Price @WanderEase : INR 2,99,999*",
+                "London",
+                "package1.jpg"
         };
         
         JTabbedPane tab = new JTabbedPane();
@@ -106,8 +107,16 @@ public class CheckPackage extends JFrame{
         l10.setForeground (new Color(22,90,114));
         l10.setFont(new Font("Tahoma",Font.BOLD,30));
         p1.add(l10);
+
+        //IMAGE DESC
+        JLabel l11 = new JLabel(pack[11]);
+        l11.setBounds(500,330,200,30);
+        l11.setForeground (new Color(22,90,114));
+        l11.setFont(new Font("Tahoma",Font.BOLD,30));
+        l11.setHorizontalAlignment(SwingConstants.CENTER);
+        p1.add(l11);
               
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/"+ pack[11]));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/"+ pack[12]));
         Image i2 = i1.getImage().getScaledInstance(500, 300, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);

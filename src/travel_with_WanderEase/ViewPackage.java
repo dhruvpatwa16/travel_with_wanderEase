@@ -32,6 +32,7 @@ public class ViewPackage extends JFrame implements ActionListener{
         
         labelpackage = new JLabel();
         labelpackage.setBounds(220,90,150,25);
+        labelpackage.setFont(new Font("",Font.BOLD,16));
         add(labelpackage);
         
         lblpersons = new JLabel("Total Persons");
@@ -41,6 +42,7 @@ public class ViewPackage extends JFrame implements ActionListener{
         
         JLabel labelpersons = new JLabel();
         labelpersons.setBounds(220,130,150,25);
+        labelpersons.setFont(new Font("",Font.BOLD,16));
         add(labelpersons);
         
         JLabel lblid = new JLabel("ID");
@@ -76,13 +78,14 @@ public class ViewPackage extends JFrame implements ActionListener{
         add(lbltotprice);
         
         JLabel labeltotprice = new JLabel();
-        labeltotprice.setBounds(220,290,150,25);
+        labeltotprice.setBounds(220,295,150,25);
+        labeltotprice.setFont(new Font("",Font.BOLD,16));
         add(labeltotprice);
         
         back = new JButton("Back");
         back.setBackground(Color.black);
         back.setForeground(Color.white);
-        back.setBounds(130,360,100,25);
+        back.setBounds(130,350,100,25);
         back.addActionListener(this);
         add(back);
         
