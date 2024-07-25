@@ -16,7 +16,7 @@ public class Splash extends JFrame implements Runnable{
         
         setVisible(true);
         thread = new Thread(this);
-        thread.start(); //will call run() mehtod (for multithreading)
+        thread.start(); //will call run() method (for multithreading)
     }
     public void run(){
         //overridden from Runnable interface

@@ -3,6 +3,7 @@ package travel_with_WanderEase;
 
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.border.LineBorder;
 import java.awt.event.*; //for ActionListener
 public class Signup extends JFrame implements ActionListener{
     
@@ -88,6 +89,7 @@ public class Signup extends JFrame implements ActionListener{
         create = new JButton("Create");             //global declaration
         create.setBackground(Color.WHITE);
         create.setForeground(Color.BLACK);
+        create.setBorder(new LineBorder(Color.white));
         create.setFont(new Font("Tahoma", Font.PLAIN, 16));
         create.setBounds(80,270,100,30);
         create.addActionListener(this); //internally calls actionPerformed() function
@@ -97,6 +99,7 @@ public class Signup extends JFrame implements ActionListener{
         back = new JButton("Back");                //global declaration
         back.setBackground(Color.WHITE);
         back.setForeground(Color.BLACK);
+        back.setBorder(new LineBorder(Color.white));
         back.setFont(new Font("Tahoma", Font.PLAIN, 16));
         back.setBounds(250,270,100,30);
         p1.add(back);

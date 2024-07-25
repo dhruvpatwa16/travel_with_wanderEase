@@ -6,7 +6,7 @@ import java.awt.event.*;
 import java.sql.ResultSet;
 public class Dashboard extends JFrame implements ActionListener{
     String username;
-    JButton addPersonalDetails, viewPersonalDetails,updatePersonalDetails,checkpackages,bookpackages,viewpackage,viewhotels,destinations,bookhotel,viewbookedhotel,payments,calculator,notepad,about,deletePersonalDetails;
+    JButton addPersonalDetails, viewPersonalDetails,updatePersonalDetails,checkpackages,bookpackages,viewpackage,viewhotels,destinations,bookhotel,viewbookedhotel,payments,calculator,notepad,about,deletePersonalDetails,logout;
     Dashboard(String username){
         this.username = username;
         //setBounds(0,0,1600,1000);
@@ -26,6 +26,14 @@ public class Dashboard extends JFrame implements ActionListener{
         JLabel icon = new JLabel(i3);
         icon.setBounds(5,0,70,65);
         p1.add(icon);
+
+        logout = new JButton("Logout");
+        logout.setBounds(1430, 15, 80, 40);
+        logout.setBackground(new Color(51,154,174));
+        logout.setForeground(Color.white);
+        logout.setFont(new Font("Tahoma", Font.BOLD,12));
+        logout.addActionListener(this);
+        p1.add(logout);
         
         JLabel heading = new JLabel("Dashboard");
         heading.setBounds(80,10,300,40);
@@ -228,6 +236,10 @@ public class Dashboard extends JFrame implements ActionListener{
             }
             else if(ae.getSource() == deletePersonalDetails){
                 new DeleteDetails(username);
+            }
+            else if(ae.getSource() == logout){
+                setVisible(false);
+                new Login();
             }
     }    
     public static void main(String[]args){

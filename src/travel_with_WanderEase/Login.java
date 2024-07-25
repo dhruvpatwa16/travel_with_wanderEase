@@ -52,9 +52,9 @@ public class Login extends JFrame implements ActionListener{
     
     login = new JButton("Login");
     login.setBounds(60,200,130,30);
-    login.setBackground(new Color(68,161,189));
+    login.setBackground(new Color(80, 200, 120));
     login.setForeground(Color.WHITE);
-    login.setBorder(new LineBorder(new Color(133,193,233)));
+    login.setBorder(new LineBorder(new Color(80,200,120)));
     login.addActionListener(this);
     p2.add(login);
     
@@ -62,15 +62,15 @@ public class Login extends JFrame implements ActionListener{
     signup.setBounds(230,200,130,30);
     signup.setBackground(new Color(68,161,189));
     signup.setForeground(Color.WHITE);
-    signup.setBorder(new LineBorder(new Color(133,193,233)));
+    signup.setBorder(new LineBorder(new Color(68,161,189)));
     signup.addActionListener(this);
     p2.add(signup);
     
     forgotpassword = new JButton("Forgot Password?");
     forgotpassword.setBounds(140,250,130,30);
-    forgotpassword.setBackground(new Color(68,161,189));
+    forgotpassword.setBackground(new Color(95, 133, 117));
     forgotpassword.setForeground(Color.WHITE);
-    forgotpassword.setBorder(new LineBorder(new Color(133,193,233)));
+    forgotpassword.setBorder(new LineBorder(new Color(95,133,117)));
     forgotpassword.addActionListener(this);
     p2.add(forgotpassword);
 
