@@ -218,7 +218,7 @@ public class BookHotel extends JFrame implements ActionListener{
         if (!labelprice.getText().isEmpty()) {
             Conn c = new Conn();
             c.s.executeUpdate("insert into booked_hotel values('"+labelusername.getText()+"','"+chotel.getSelectedItem()+"','"+tfpersons.getText()+"','"+tfdays.getText()+"','"+cac.getSelectedItem()+"','"+cfood.getSelectedItem()+"','"+labelid.getText()+"','"+labelnumber.getText()+"','"+labelphone.getText()+"','"+labelprice.getText()+"')");
-            JOptionPane.showMessageDialog(null,"Hotel Booked Successfully!");
+            JOptionPane.showMessageDialog(null,"Hotel Successfully Added for Checkout!");
             setVisible(false);
         } else {
             JOptionPane.showMessageDialog(null,"Please select a hotel and calculate the price first!");

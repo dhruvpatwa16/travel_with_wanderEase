@@ -3,10 +3,10 @@ package travel_with_WanderEase;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.sql.ResultSet;
+
 public class Dashboard extends JFrame implements ActionListener{
     String username;
-    JButton addPersonalDetails, viewPersonalDetails,updatePersonalDetails,checkpackages,bookpackages,viewpackage,viewhotels,destinations,bookhotel,viewbookedhotel,payments,calculator,notepad,about,deletePersonalDetails,logout;
+    JButton addPersonalDetails, viewPersonalDetails,updatePersonalDetails,checkpackages,bookpackages,viewpackage,viewhotels,destinations,bookhotel,viewbookedhotel,checkout,calculator,notepad,about,deletePersonalDetails,logout;
     Dashboard(String username){
         this.username = username;
         //setBounds(0,0,1600,1000);
@@ -101,7 +101,7 @@ public class Dashboard extends JFrame implements ActionListener{
         bookpackages.addActionListener(this);
         p2.add(bookpackages);
         
-        viewpackage = new JButton("View Package");
+        viewpackage = new JButton("View Booked Package");
         viewpackage.setBounds(0,300,300,50);
         viewpackage.setBackground(new Color(6,41,55));
         viewpackage.setForeground(Color.white);
@@ -146,14 +146,14 @@ public class Dashboard extends JFrame implements ActionListener{
         destinations.addActionListener(this);
         p2.add(destinations);
         
-        payments = new JButton("Payments");
-        payments.setBounds(0,550,300,50);
-        payments.setBackground(new Color(6,41,55));
-        payments.setForeground(Color.white);
-        payments.setFont(new Font("Tahoma", Font.PLAIN,20));
-        payments.setMargin(new Insets(0,0,0,155));  //Insets(top,left,bottom,right);
-        payments.addActionListener(this);
-        p2.add(payments);
+        checkout = new JButton("Checkout");
+        checkout.setBounds(0,550,300,50);
+        checkout.setBackground(new Color(6,41,55));
+        checkout.setForeground(Color.white);
+        checkout.setFont(new Font("Tahoma", Font.PLAIN,20));
+        checkout.setMargin(new Insets(0,0,0,155));  //Insets(top,left,bottom,right);
+        checkout.addActionListener(this);
+        p2.add(checkout);
         
         calculator = new JButton("Calculator");
         calculator.setBounds(0,600,300,50);
@@ -215,8 +215,9 @@ public class Dashboard extends JFrame implements ActionListener{
             }else if(ae.getSource() == viewbookedhotel){
                 new ViewBookedHotel(username);
             }
-            else if(ae.getSource() == payments){
-                new Payments(username);
+            else if(ae.getSource() == checkout){
+                JOptionPane.showMessageDialog(null,"Please click Fetch Button to fetch details.");
+                new Checkout(username);
             }
             else if(ae.getSource() == calculator){
                 try{

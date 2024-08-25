@@ -152,12 +152,12 @@ public class BookPackage extends JFrame implements ActionListener{
                 }
                 int count = Integer.parseInt(tfpersons.getText()) ;
                 cost *= count;
-                labelprice.setText("INR "+cost+"/-");
+                labelprice.setText("INR "+cost);
             }else if(ae.getSource() == bookpackage){
                 try{
                     Conn c = new Conn();
                     c.s.executeUpdate("insert into bookedpackage values('"+labelusername.getText()+"','"+cpackage.getSelectedItem()+"','"+tfpersons.getText()+"','"+labelid.getText()+"','"+labelnumber.getText()+"','"+labelphone.getText()+"','"+labelprice.getText()+"')");
-                    JOptionPane.showMessageDialog(null,"Package Booked Successfully!");
+                    JOptionPane.showMessageDialog(null,"Package Added for Checkout Successfully!");
                     setVisible(false);
                 }catch(Exception e){
                     e.printStackTrace();
